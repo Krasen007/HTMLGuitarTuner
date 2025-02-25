@@ -1,0 +1,19 @@
+
+{
+  "lang": "en-us",
+  "name": "Guitar Tuner",
+  "short_name": "Tuner",
+  "description": "A simple chromatic guitar tuner",
+  "start_url": ".",
+  "background_color": "#1a1a1a",
+  "theme_color": "#4CAF50",
+  "orientation": "portrait",
+  "display": "standalone",
+  "icons": [
+    {
+    "src": "icon512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+    }
+  ]
+}

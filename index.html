@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon"
+    href="https://raw.githubusercontent.com/billthefarmer/ctuner/refs/heads/master/windows/Tuner.ico" />
+  <title>Guitar Tuner</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+  <div class="container">
+    <div class="settings">
+      <button id="settingsButton">⚙️</button>
+      <div id="settingsMenu" class="settings-menu hidden">
+        <label>Input Boost (dB):
+          <input type="range" id="gainSlider" min="0" max="40" value="14" step="2">
+          <span id="gainValue">25 dB</span>
+        </label>
+      </div>
+    </div>
+    <h1>Guitar Tuner 2.7</h1>
+    <div id="note">-</div>
+    <div id="frequency">- Hz</div>
+    <div id="volume">- dB</div>
+    <canvas id="tunerGraph" width="300" height="150"></canvas>
+    <button id="startButton">Start the Tuner</button>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js', {scope: '/'});
+    }
+  </script>
+</body>
+
+</html>
