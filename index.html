@@ -17,12 +17,12 @@
       <button id="settingsButton">⚙️</button>
       <div id="settingsMenu" class="settings-menu hidden">
         <label>Input Boost (dB):
-          <input type="range" id="gainSlider" min="0" max="40" value="14" step="2">
+          <input type="range" id="gainSlider" min="0" max="40" value="25" step="2">
           <span id="gainValue">25 dB</span>
         </label>
       </div>
     </div>
-    <h1>Guitar Tuner 2.7</h1>
+    <h1>Guitar Tuner 2.8</h1>
     <div id="note">-</div>
     <div id="frequency">- Hz</div>
     <div id="volume">- dB</div>
@@ -32,7 +32,7 @@
   <script src="script.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js', {scope: '/'});
+      navigator.serviceWorker.register('/sw.js', { scope: '/' });
     }
   </script>
 </body>
